@@ -5,6 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid & Flexbox Master Showcase</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: #ff5f6d;
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      text-align: center;
+      padding: 100px 20px;
+      color: #fff;
+    }
+
+    .hero-section h1 {
+      font-size: 4rem;
+    }
+
+    .hero-section p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+
+    /* Flexbox Landing Page Section */
+    .flexbox-section {
+      padding: 60px 20px;
+    }
+
+    .landing-flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .landing-flex-left {
+      flex: 1;
+    }
+
+    .landing-flex-right {
+      flex: 1;
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #008080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #004d4d;
+    }
+
+    /* Portfolio Grid Section */
+    .portfolio-grid-section {
+      padding: 60px 20px;
+      background-color: #f3e5f5;
+    }
+
+    .portfolio-grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .portfolio-grid-item {
+      background-color: #ce93d8;
+      padding: 40px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    /* Testimonials Flexbox Section */
+    .testimonials-section {
+      padding: 60px 20px;
+      background-color: #e1f5fe;
+      text-align: center;
+    }
+
+    .testimonials-flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .testimonial-item {
+      flex: 1;
+      background-color: #81d4fa;
+      padding: 30px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Dashboard Grid Section */
+    .dashboard-grid-section {
+      padding: 60px 20px;
+      background-color: #fff9c4;
+    }
+
+    .dashboard-grid-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 80px 300px 200px;
+      gap: 20px;
+    }
+
+    .dashboard-item {
+      padding: 20px;
+      background-color: #fbc02d;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .dashboard-item.header {
+      grid-column: span 3;
+      background-color: #ffeb3b;
+    }
+
+    .dashboard-item.sidebar {
+      grid-row: span 2;
+    }
+
+    .dashboard-item.main-content {
+      grid-column: 2 / 3;
+    }
+
+    .dashboard-item.chart {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+    .dashboard-item.stats {
+      grid-column: 2 / span 2;
+      grid-row: 3;
+    }
+
+    .dashboard-item.footer {
+      grid-column: span 3;
+      background-color: #ffeb3b;
+    }
+
+    /* Footer Section */
+    .footer-section {
+      padding: 40px 20px;
+      background-color: #212121;
+      color: #fff;
+    }
+
+    .footer-flex-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-item {
+      flex: 1;
+      margin: 10px;
+    }
+
+    .footer-item h4 {
+      margin-bottom: 10px;
+    }
+
+    .footer-item a {
+      color: #ffeb3b;
+      text-decoration: none;
+    }
+
+  </style>
 </head>
 <body>
   <header class="hero-section">
